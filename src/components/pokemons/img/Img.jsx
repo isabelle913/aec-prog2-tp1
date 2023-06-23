@@ -2,7 +2,6 @@ import React from "react";
 import "./Img.css";
 
 const Img = (props) => {
-  console.log(props);
   return (
     <>
       <div>
