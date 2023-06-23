@@ -17,6 +17,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
+  position: relative;
 }
 .footer {
   padding: 40px 0 10px 0;

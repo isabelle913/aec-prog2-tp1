@@ -5,3 +5,12 @@
   padding: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
+
+.section-habilities {
+  display: none;
+}
+.selected {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
