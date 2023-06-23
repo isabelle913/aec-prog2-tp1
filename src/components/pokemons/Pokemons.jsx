@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 import Card from "./card/Card";
 import "./Pokemons.css";
@@ -14,8 +15,19 @@ import Melmetal from "../../assets/Melmetal.png";
 import Muk from "../../assets/Muk.png";
 
 const Pokemons = () => {
-  // TODO titre de l'onglet
-  // TODO favicon
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleEnter = (index) => {
+    console.log("handleEnter", index);
+    setCurrentIndex(index);
+    console.log("currentIndex", currentIndex);
+  };
+  const handleLeave = (index) => {
+    console.log("handleLeave", index);
+    setCurrentIndex(0);
+    console.log("currentIndex", currentIndex);
+  };
+
   return (
     <>
       <div className="container">
@@ -32,6 +44,9 @@ const Pokemons = () => {
             type="Electrique"
             height="0.4m"
             weight="6kg"
+            selected="selected"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={2}
@@ -44,6 +59,8 @@ const Pokemons = () => {
             type="Bug Flying"
             height="1.1m"
             weight="32kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={3}
@@ -56,6 +73,8 @@ const Pokemons = () => {
             type="Fairy"
             height="1.3m"
             weight="40kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={4}
@@ -68,6 +87,8 @@ const Pokemons = () => {
             type="Fairy Psychic Fire"
             height="1.7m"
             weight="95kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={5}
@@ -80,6 +101,8 @@ const Pokemons = () => {
             type="Water Ice"
             height="1.7m"
             weight="120kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={6}
@@ -92,6 +115,8 @@ const Pokemons = () => {
             type="Grass Psychic Dragon"
             height="2.0m"
             weight="120kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={7}
@@ -104,6 +129,8 @@ const Pokemons = () => {
             type="Normal"
             height="2.2m"
             weight="80kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={8}
@@ -116,6 +143,8 @@ const Pokemons = () => {
             type="Electric Psychic"
             height="0.8m"
             weight="30kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={9}
@@ -128,6 +157,8 @@ const Pokemons = () => {
             type="Steel"
             height="2.5m"
             weight="800kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
           <Card
             index={10}
@@ -140,6 +171,8 @@ const Pokemons = () => {
             type="Poison Dark"
             height="1.2m"
             weight="30kg"
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
           />
         </div>
         <p className="footer">
