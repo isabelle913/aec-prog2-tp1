@@ -6,10 +6,13 @@ import Text from "../text/Text";
 const Card = (props) => {
   const className = ["section-habilities"];
 
-  if (props.selected) className.push(props.selected);
+  if (props.index === props.currentIndex){
+    className.push('selected');
+  } 
 
   const onMouseEnter = () => props.onMouseEnter(props.index);
   const onMouseLeave = () => props.onMouseLeave(props.index);
+
 
   return (
     <>

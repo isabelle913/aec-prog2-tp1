@@ -18,14 +18,14 @@ const Pokemons = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleEnter = (index) => {
-    console.log("handleEnter", index);
+    //console.log("handleEnter", index);
     setCurrentIndex(index);
-    console.log("currentIndex", currentIndex);
+    //console.log("currentIndex", currentIndex);
   };
   const handleLeave = (index) => {
-    console.log("handleLeave", index);
+    //console.log("handleLeave", index);
     setCurrentIndex(0);
-    console.log("currentIndex", currentIndex);
+    //console.log("currentIndex", currentIndex);
   };
 
   return (
@@ -44,9 +44,9 @@ const Pokemons = () => {
             type="Electrique"
             height="0.4m"
             weight="6kg"
-            selected="selected"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={2}
@@ -61,6 +61,7 @@ const Pokemons = () => {
             weight="32kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={3}
@@ -75,6 +76,7 @@ const Pokemons = () => {
             weight="40kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={4}
@@ -89,6 +91,7 @@ const Pokemons = () => {
             weight="95kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={5}
@@ -103,6 +106,7 @@ const Pokemons = () => {
             weight="120kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={6}
@@ -117,6 +121,7 @@ const Pokemons = () => {
             weight="120kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={7}
@@ -131,6 +136,7 @@ const Pokemons = () => {
             weight="80kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={8}
@@ -145,6 +151,7 @@ const Pokemons = () => {
             weight="30kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={9}
@@ -159,6 +166,7 @@ const Pokemons = () => {
             weight="800kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
           <Card
             index={10}
@@ -173,6 +181,7 @@ const Pokemons = () => {
             weight="30kg"
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            currentIndex={currentIndex}
           />
         </div>
         <p className="footer">
