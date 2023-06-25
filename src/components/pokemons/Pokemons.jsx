@@ -18,14 +18,10 @@ const Pokemons = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleEnter = (index) => {
-    //console.log("handleEnter", index);
     setCurrentIndex(index);
-    //console.log("currentIndex", currentIndex);
   };
   const handleLeave = (index) => {
-    //console.log("handleLeave", index);
     setCurrentIndex(0);
-    //console.log("currentIndex", currentIndex);
   };
 
   return (

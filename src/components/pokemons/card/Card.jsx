@@ -1,25 +1,26 @@
 import React from "react";
-import "./Card.css";
 import Img from "../img/Img";
 import Text from "../text/Text";
 
+
+import "./Card.css";
+
 const Card = (props) => {
+
   const className = ["section-habilities"];
 
   if (props.index === props.currentIndex){
     className.push('selected');
-  } 
+} 
 
   const onMouseEnter = () => props.onMouseEnter(props.index);
   const onMouseLeave = () => props.onMouseLeave(props.index);
 
-
   return (
     <>
-      <div
+       <div
         className="card"
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
+        onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}
       >
         <Img img={props.img} />
         <Text className="center name" as="h2" text={props.name} />
@@ -39,6 +40,7 @@ const Card = (props) => {
           </div>
         </div>
       </div>
+   
     </>
   );
 };
